@@ -9,7 +9,7 @@ All methods are static and ready to use out-of-the-box.
 | Section | Description |
 |----------|-------------|
 | [Installation](#installation) | How to install and use in Unity |
-| [DLogger](#dlogger) | Simple colored log system |
+| [DLogger](#dlogger) | Colored log system with tag & custom color |
 | [DateUtils](#dateutils) | Date/time parsing and UTC conversion utilities |
 | [EnumExtensions](#enumextensions) | Add string value attributes to enums |
 | [RectTransformExtensions](#recttransformextensions) | Quick utilities for UI anchoring and layout |
@@ -40,24 +40,71 @@ All methods are static and ready to use out-of-the-box.
 
 ## 🧱 DLogger
 
-Lightweight logging utility with colorized tags.
+Lightweight logging utility with colorized tags.  
+Ideal for debugging complex systems while keeping your console clean and readable.
 
+### 🔧 Example Usage
 ```csharp
 DLogger.Log("Hello World");
 DLogger.LogWarning("Potential issue!");
 DLogger.LogError("Critical failure!", "MySystem", "#FF0000");
 ```
 
-### Methods
+### 💬 Console Output (Unity Example)
+| Example Output | Type |
+|----------------|------|
+| ![info](https://i.imgur.com/l3CwFMb.png) `[DLogger] Hello World` | Info |
+| ![warn](https://i.imgur.com/p8vdlcR.png) `[DLogger] Potential issue!` | Warning |
+| ![error](https://i.imgur.com/M5if6z5.png) `[MySystem] Critical failure!` | Error |
+
+*(Sample above matches the real Unity console appearance.)*
+
+---
+
+### 📜 Methods
 | Method | Description |
 |---------|-------------|
-| `Log(string message, string tag = "DLogger", string color = "#FFFFFF")` | Logs a normal message. |
+| `Log(string message, string tag = "DLogger", string color = "#FFFFFF")` | Logs a normal message with optional colored tag. |
 | `LogWarning(string message, string tag = "DLogger", string color = "#FFFFFF")` | Logs a yellow warning message. |
 | `LogError(string message, string tag = "DLogger", string color = "#FFFFFF")` | Logs a red error message. |
 
-> 💡 Works only when `#if !RELEASE` is active — automatically disabled in release builds.
+> 💡 Works only when `#if !RELEASE` is active — automatically disabled in release builds.  
+> You can combine this with Unity's **Define Symbols** to control build-time logs.
 
 ---
+
+### 🎨 LogColors Reference
+
+Use the `LogColors` static class for consistent color tags in your logs.
+
+```csharp
+DLogger.Log("Download Complete", "Network", LogColors.Aqua);
+DLogger.LogWarning("Low FPS detected", "Performance", LogColors.Gold);
+DLogger.LogError("Missing reference!", "GameManager", LogColors.OrangeRed);
+```
+
+| Color Name | Hex Code | Sample |
+|-------------|-----------|--------|
+| `White` | `#FFFFFF` | 🟩 ![#FFFFFF](https://via.placeholder.com/20/FFFFFF/FFFFFF.png) |
+| `Aqua` | `#00FFFF` | 🟦 ![#00FFFF](https://via.placeholder.com/20/00FFFF/00FFFF.png) |
+| `PaleGreen` | `#98FB98` | 🟩 ![#98FB98](https://via.placeholder.com/20/98FB98/98FB98.png) |
+| `Lime` | `#00FF00` | 🟩 ![#00FF00](https://via.placeholder.com/20/00FF00/00FF00.png) |
+| `Gold` | `#FFD700` | 🟨 ![#FFD700](https://via.placeholder.com/20/FFD700/FFD700.png) |
+| `Orange` | `#FFA500` | 🟧 ![#FFA500](https://via.placeholder.com/20/FFA500/FFA500.png) |
+| `OrangeRed` | `#FF4500` | 🟥 ![#FF4500](https://via.placeholder.com/20/FF4500/FF4500.png) |
+| `Magenta` | `#FF00FF` | 🟪 ![#FF00FF](https://via.placeholder.com/20/FF00FF/FF00FF.png) |
+| `BlueViolet` | `#8A2BE2` | 🟪 ![#8A2BE2](https://via.placeholder.com/20/8A2BE2/8A2BE2.png) |
+| `Orchid` | `#DA70D6` | 🟪 ![#DA70D6](https://via.placeholder.com/20/DA70D6/DA70D6.png) |
+| `MediumOrchid` | `#BA55D3` | 🟪 ![#BA55D3](https://via.placeholder.com/20/BA55D3/BA55D3.png) |
+
+> All colors are defined as static readonly hex strings in `LogColors` class.  
+> Example:  
+> ```csharp
+> public static readonly string OrangeRed = "#FF4500";
+> ```
+
+---
+
 
 ## ⏰ DateUtils
 
