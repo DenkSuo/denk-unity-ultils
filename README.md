@@ -83,34 +83,30 @@ DLogger.LogWarning("Low FPS detected", "Performance", LogColors.Gold);
 DLogger.LogError("Missing reference!", "GameManager", LogColors.OrangeRed);
 ```
 
-<table>
-<thead>
-<tr>
-<th>Color Name</th>
-<th>Hex Code</th>
-<th>Preview</th>
-</tr>
-</thead>
-<tbody>
-<tr><td><code>White</code></td><td>#FFFFFF</td><td><div style="width:60px;height:18px;background:#FFFFFF;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Aqua</code></td><td>#00FFFF</td><td><div style="width:60px;height:18px;background:#00FFFF;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Aquamarine</code></td><td>#7FFFD4</td><td><div style="width:60px;height:18px;background:#7FFFD4;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Turquoise</code></td><td>#40E0D0</td><td><div style="width:60px;height:18px;background:#40E0D0;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>PaleGreen</code></td><td>#98FB98</td><td><div style="width:60px;height:18px;background:#98FB98;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>YellowGreen</code></td><td>#9ACD32</td><td><div style="width:60px;height:18px;background:#9ACD32;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Lime</code></td><td>#00FF00</td><td><div style="width:60px;height:18px;background:#00FF00;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Chartreuse</code></td><td>#7FFF00</td><td><div style="width:60px;height:18px;background:#7FFF00;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>GreenYellow</code></td><td>#ADFF2F</td><td><div style="width:60px;height:18px;background:#ADFF2F;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Gold</code></td><td>#FFD700</td><td><div style="width:60px;height:18px;background:#FFD700;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Orange</code></td><td>#FFA500</td><td><div style="width:60px;height:18px;background:#FFA500;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>OrangeRed</code></td><td>#FF4500</td><td><div style="width:60px;height:18px;background:#FF4500;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Magenta</code></td><td>#FF00FF</td><td><div style="width:60px;height:18px;background:#FF00FF;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Violet</code></td><td>#EE82EE</td><td><div style="width:60px;height:18px;background:#EE82EE;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>BlueViolet</code></td><td>#8A2BE2</td><td><div style="width:60px;height:18px;background:#8A2BE2;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>Orchid</code></td><td>#DA70D6</td><td><div style="width:60px;height:18px;background:#DA70D6;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-<tr><td><code>MediumOrchid</code></td><td>#BA55D3</td><td><div style="width:60px;height:18px;background:#BA55D3;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
-</tbody>
-</table>
+| Color Name | Hex Code |
+|-------------|-----------|
+| `White` | `#FFFFFF` |
+| `Aqua` | `#00FFFF` |
+| `Aquamarine` | `#7FFFD4` |
+| `Turquoise` | `#40E0D0` |
+| `PaleGreen` | `#98FB98` |
+| `YellowGreen` | `#9ACD32` |
+| `Lime` | `#00FF00` |
+| `Chartreuse` | `#7FFF00` |
+| `GreenYellow` | `#ADFF2F` |
+| `LimeGreen` | `#32CD32` |
+| `Gold` | `#FFD700` |
+| `Orange` | `#FFA500` |
+| `OrangeRed` | `#FF4500` |
+| `Tomato` | `#FF6347` |
+| `Coral` | `#FF7F50` |
+| `DarkOrange` | `#FF8C00` |
+| `DeepPink` | `#FF1493` |
+| `Magenta` | `#FF00FF` |
+| `Violet` | `#EE82EE` |
+| `BlueViolet` | `#8A2BE2` |
+| `Orchid` | `#DA70D6` |
+| `MediumOrchid` | `#BA55D3` |
 
 > All colors are defined as static readonly hex strings in `LogColors`.  
 > Example:
@@ -118,6 +114,7 @@ DLogger.LogError("Missing reference!", "GameManager", LogColors.OrangeRed);
 > public static readonly string OrangeRed = "#FF4500";
 > ```
 
+---
 
 ## ⏰ DateUtils
 
