@@ -53,9 +53,9 @@ DLogger.LogError("Critical failure!", "MySystem", "#FF0000");
 ### 💬 Console Output (Unity Example)
 | Example Output | Type |
 |----------------|------|
-| ![info](https://i.imgur.com/l3CwFMb.png) `[DLogger] Hello World` | Info |
-| ![warn](https://i.imgur.com/p8vdlcR.png) `[DLogger] Potential issue!` | Warning |
-| ![error](https://i.imgur.com/M5if6z5.png) `[MySystem] Critical failure!` | Error |
+| ![info]`[DLogger] Hello World` | Info |
+| ![warn]`[DLogger] Potential issue!` | Warning |
+| ![error]`[MySystem] Critical failure!` | Error |
 
 *(Sample above matches the real Unity console appearance.)*
 
@@ -83,22 +83,42 @@ DLogger.LogWarning("Low FPS detected", "Performance", LogColors.Gold);
 DLogger.LogError("Missing reference!", "GameManager", LogColors.OrangeRed);
 ```
 
-| Color Name | Hex Code | Sample |
-|-------------|-----------|--------|
-| `White` | `#FFFFFF` | 🟩 ![#FFFFFF](https://via.placeholder.com/20/FFFFFF/FFFFFF.png) |
-| `Aqua` | `#00FFFF` | 🟦 ![#00FFFF](https://via.placeholder.com/20/00FFFF/00FFFF.png) |
-| `PaleGreen` | `#98FB98` | 🟩 ![#98FB98](https://via.placeholder.com/20/98FB98/98FB98.png) |
-| `Lime` | `#00FF00` | 🟩 ![#00FF00](https://via.placeholder.com/20/00FF00/00FF00.png) |
-| `Gold` | `#FFD700` | 🟨 ![#FFD700](https://via.placeholder.com/20/FFD700/FFD700.png) |
-| `Orange` | `#FFA500` | 🟧 ![#FFA500](https://via.placeholder.com/20/FFA500/FFA500.png) |
-| `OrangeRed` | `#FF4500` | 🟥 ![#FF4500](https://via.placeholder.com/20/FF4500/FF4500.png) |
-| `Magenta` | `#FF00FF` | 🟪 ![#FF00FF](https://via.placeholder.com/20/FF00FF/FF00FF.png) |
-| `BlueViolet` | `#8A2BE2` | 🟪 ![#8A2BE2](https://via.placeholder.com/20/8A2BE2/8A2BE2.png) |
-| `Orchid` | `#DA70D6` | 🟪 ![#DA70D6](https://via.placeholder.com/20/DA70D6/DA70D6.png) |
-| `MediumOrchid` | `#BA55D3` | 🟪 ![#BA55D3](https://via.placeholder.com/20/BA55D3/BA55D3.png) |
+<table>
+<thead>
+<tr>
+<th>Color Name</th>
+<th>Hex Code</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>White</code></td><td>#FFFFFF</td><td><div style="width:50px;height:20px;background:#FFFFFF;border:1px solid #ccc"></div></td></tr>
+<tr><td><code>Aqua</code></td><td>#00FFFF</td><td><div style="width:50px;height:20px;background:#00FFFF"></div></td></tr>
+<tr><td><code>Aquamarine</code></td><td>#7FFFD4</td><td><div style="width:50px;height:20px;background:#7FFFD4"></div></td></tr>
+<tr><td><code>Turquoise</code></td><td>#40E0D0</td><td><div style="width:50px;height:20px;background:#40E0D0"></div></td></tr>
+<tr><td><code>PaleGreen</code></td><td>#98FB98</td><td><div style="width:50px;height:20px;background:#98FB98"></div></td></tr>
+<tr><td><code>YellowGreen</code></td><td>#9ACD32</td><td><div style="width:50px;height:20px;background:#9ACD32"></div></td></tr>
+<tr><td><code>Lime</code></td><td>#00FF00</td><td><div style="width:50px;height:20px;background:#00FF00"></div></td></tr>
+<tr><td><code>Chartreuse</code></td><td>#7FFF00</td><td><div style="width:50px;height:20px;background:#7FFF00"></div></td></tr>
+<tr><td><code>GreenYellow</code></td><td>#ADFF2F</td><td><div style="width:50px;height:20px;background:#ADFF2F"></div></td></tr>
+<tr><td><code>LimeGreen</code></td><td>#32CD32</td><td><div style="width:50px;height:20px;background:#32CD32"></div></td></tr>
+<tr><td><code>Gold</code></td><td>#FFD700</td><td><div style="width:50px;height:20px;background:#FFD700"></div></td></tr>
+<tr><td><code>Orange</code></td><td>#FFA500</td><td><div style="width:50px;height:20px;background:#FFA500"></div></td></tr>
+<tr><td><code>OrangeRed</code></td><td>#FF4500</td><td><div style="width:50px;height:20px;background:#FF4500"></div></td></tr>
+<tr><td><code>Tomato</code></td><td>#FF6347</td><td><div style="width:50px;height:20px;background:#FF6347"></div></td></tr>
+<tr><td><code>Coral</code></td><td>#FF7F50</td><td><div style="width:50px;height:20px;background:#FF7F50"></div></td></tr>
+<tr><td><code>DarkOrange</code></td><td>#FF8C00</td><td><div style="width:50px;height:20px;background:#FF8C00"></div></td></tr>
+<tr><td><code>DeepPink</code></td><td>#FF1493</td><td><div style="width:50px;height:20px;background:#FF1493"></div></td></tr>
+<tr><td><code>Magenta</code></td><td>#FF00FF</td><td><div style="width:50px;height:20px;background:#FF00FF"></div></td></tr>
+<tr><td><code>Violet</code></td><td>#EE82EE</td><td><div style="width:50px;height:20px;background:#EE82EE"></div></td></tr>
+<tr><td><code>BlueViolet</code></td><td>#8A2BE2</td><td><div style="width:50px;height:20px;background:#8A2BE2"></div></td></tr>
+<tr><td><code>Orchid</code></td><td>#DA70D6</td><td><div style="width:50px;height:20px;background:#DA70D6"></div></td></tr>
+<tr><td><code>MediumOrchid</code></td><td>#BA55D3</td><td><div style="width:50px;height:20px;background:#BA55D3"></div></td></tr>
+</tbody>
+</table>
 
-> All colors are defined as static readonly hex strings in `LogColors` class.  
-> Example:  
+> All colors are defined as static readonly hex strings in `LogColors`.  
+> Example:
 > ```csharp
 > public static readonly string OrangeRed = "#FF4500";
 > ```
