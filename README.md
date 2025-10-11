@@ -21,12 +21,13 @@ All methods are static and ready to use out-of-the-box.
 
 ## 🧩 Installation
 
-1. Download **`UnityUtils.dll`** from the **[Releases](../../releases)** page of this repository.  
-2. Place it into your Unity project under:  
-   ```
-   Assets/Plugins/
-   ```
-3. Unity will automatically load it and you can start using:
+1. Download **`denk-unity-utils.unitypackage`** from the **[Releases](../../releases)** page of this repository.  
+2. Double-click the file to automatically import it into your Unity project.  
+   Unity will add all scripts and files under the `Assets/Plugins/Utilities/` folder.  
+3. Alternatively, you can manually install it using Unity Package Manager (UPM):  
+   Follow the official Unity guide:  
+   👉 [https://docs.unity3d.com/2020.1/Documentation/Manual/upm-ui-local.html](https://docs.unity3d.com/2020.1/Documentation/Manual/upm-ui-local.html)
+4. Once imported, you can start using:
    ```csharp
    using Utilities;
    ```
