@@ -92,28 +92,23 @@ DLogger.LogError("Missing reference!", "GameManager", LogColors.OrangeRed);
 </tr>
 </thead>
 <tbody>
-<tr><td><code>White</code></td><td>#FFFFFF</td><td><div style="width:50px;height:20px;background:#FFFFFF;border:1px solid #ccc"></div></td></tr>
-<tr><td><code>Aqua</code></td><td>#00FFFF</td><td><div style="width:50px;height:20px;background:#00FFFF"></div></td></tr>
-<tr><td><code>Aquamarine</code></td><td>#7FFFD4</td><td><div style="width:50px;height:20px;background:#7FFFD4"></div></td></tr>
-<tr><td><code>Turquoise</code></td><td>#40E0D0</td><td><div style="width:50px;height:20px;background:#40E0D0"></div></td></tr>
-<tr><td><code>PaleGreen</code></td><td>#98FB98</td><td><div style="width:50px;height:20px;background:#98FB98"></div></td></tr>
-<tr><td><code>YellowGreen</code></td><td>#9ACD32</td><td><div style="width:50px;height:20px;background:#9ACD32"></div></td></tr>
-<tr><td><code>Lime</code></td><td>#00FF00</td><td><div style="width:50px;height:20px;background:#00FF00"></div></td></tr>
-<tr><td><code>Chartreuse</code></td><td>#7FFF00</td><td><div style="width:50px;height:20px;background:#7FFF00"></div></td></tr>
-<tr><td><code>GreenYellow</code></td><td>#ADFF2F</td><td><div style="width:50px;height:20px;background:#ADFF2F"></div></td></tr>
-<tr><td><code>LimeGreen</code></td><td>#32CD32</td><td><div style="width:50px;height:20px;background:#32CD32"></div></td></tr>
-<tr><td><code>Gold</code></td><td>#FFD700</td><td><div style="width:50px;height:20px;background:#FFD700"></div></td></tr>
-<tr><td><code>Orange</code></td><td>#FFA500</td><td><div style="width:50px;height:20px;background:#FFA500"></div></td></tr>
-<tr><td><code>OrangeRed</code></td><td>#FF4500</td><td><div style="width:50px;height:20px;background:#FF4500"></div></td></tr>
-<tr><td><code>Tomato</code></td><td>#FF6347</td><td><div style="width:50px;height:20px;background:#FF6347"></div></td></tr>
-<tr><td><code>Coral</code></td><td>#FF7F50</td><td><div style="width:50px;height:20px;background:#FF7F50"></div></td></tr>
-<tr><td><code>DarkOrange</code></td><td>#FF8C00</td><td><div style="width:50px;height:20px;background:#FF8C00"></div></td></tr>
-<tr><td><code>DeepPink</code></td><td>#FF1493</td><td><div style="width:50px;height:20px;background:#FF1493"></div></td></tr>
-<tr><td><code>Magenta</code></td><td>#FF00FF</td><td><div style="width:50px;height:20px;background:#FF00FF"></div></td></tr>
-<tr><td><code>Violet</code></td><td>#EE82EE</td><td><div style="width:50px;height:20px;background:#EE82EE"></div></td></tr>
-<tr><td><code>BlueViolet</code></td><td>#8A2BE2</td><td><div style="width:50px;height:20px;background:#8A2BE2"></div></td></tr>
-<tr><td><code>Orchid</code></td><td>#DA70D6</td><td><div style="width:50px;height:20px;background:#DA70D6"></div></td></tr>
-<tr><td><code>MediumOrchid</code></td><td>#BA55D3</td><td><div style="width:50px;height:20px;background:#BA55D3"></div></td></tr>
+<tr><td><code>White</code></td><td>#FFFFFF</td><td><div style="width:60px;height:18px;background:#FFFFFF;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Aqua</code></td><td>#00FFFF</td><td><div style="width:60px;height:18px;background:#00FFFF;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Aquamarine</code></td><td>#7FFFD4</td><td><div style="width:60px;height:18px;background:#7FFFD4;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Turquoise</code></td><td>#40E0D0</td><td><div style="width:60px;height:18px;background:#40E0D0;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>PaleGreen</code></td><td>#98FB98</td><td><div style="width:60px;height:18px;background:#98FB98;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>YellowGreen</code></td><td>#9ACD32</td><td><div style="width:60px;height:18px;background:#9ACD32;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Lime</code></td><td>#00FF00</td><td><div style="width:60px;height:18px;background:#00FF00;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Chartreuse</code></td><td>#7FFF00</td><td><div style="width:60px;height:18px;background:#7FFF00;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>GreenYellow</code></td><td>#ADFF2F</td><td><div style="width:60px;height:18px;background:#ADFF2F;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Gold</code></td><td>#FFD700</td><td><div style="width:60px;height:18px;background:#FFD700;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Orange</code></td><td>#FFA500</td><td><div style="width:60px;height:18px;background:#FFA500;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>OrangeRed</code></td><td>#FF4500</td><td><div style="width:60px;height:18px;background:#FF4500;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Magenta</code></td><td>#FF00FF</td><td><div style="width:60px;height:18px;background:#FF00FF;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Violet</code></td><td>#EE82EE</td><td><div style="width:60px;height:18px;background:#EE82EE;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>BlueViolet</code></td><td>#8A2BE2</td><td><div style="width:60px;height:18px;background:#8A2BE2;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>Orchid</code></td><td>#DA70D6</td><td><div style="width:60px;height:18px;background:#DA70D6;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
+<tr><td><code>MediumOrchid</code></td><td>#BA55D3</td><td><div style="width:60px;height:18px;background:#BA55D3;border:1px solid #777;border-radius:4px;">&nbsp;</div></td></tr>
 </tbody>
 </table>
 
@@ -122,8 +117,6 @@ DLogger.LogError("Missing reference!", "GameManager", LogColors.OrangeRed);
 > ```csharp
 > public static readonly string OrangeRed = "#FF4500";
 > ```
-
----
 
 
 ## ⏰ DateUtils
