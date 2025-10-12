@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Utilities.Exts
 {
-    public static class ImbaExtension
+    public static class GameObjectExtension
     {
         public static List<GameObject> GetAllChilds(this GameObject go)
         {
