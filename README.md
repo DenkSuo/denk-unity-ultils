@@ -18,7 +18,7 @@ All methods are static and ready to use out-of-the-box.
 | [MathExtensions](#mathextensions) | Math operations: clamp, repeat, abs, float↔byte conversions |
 | [TransformExtensions](#transformextensions) | Transform helpers for local/global positions |
 | [OtherExtensions](#otherextensions) | Miscellaneous handy helpers (Vector3, Color, etc.) |
-| [GameObjectExtension](#GameObjectExtension) | Get all direct children |
+| [GameObjectExtension](#gameobjectextension) | Get all direct children |
 | [MaskExtensions](#maskextensions) | LayerMask contains check |
 | [ActionExtensions](#actionextensions) | Null-safe Action invoke |
 | [ArrayExtensions](#arrayextensions) | Shuffle, safe index, random element |
@@ -27,7 +27,7 @@ All methods are static and ready to use out-of-the-box.
 
 ---
 
-## 🧩 Installation
+## Installation
 
 1. Download **`denk-unity-utils.unitypackage`** from the **[Releases](../../releases)** page.  
 2. Double-click the file to automatically import into Unity.  
@@ -41,19 +41,19 @@ using Utilities.Exts;
 
 ---
 
-## 🧱 DLogger
+## DLogger
 
 Lightweight logging utility with colorized tags.  
 Ideal for debugging complex systems while keeping your console clean and readable.
 
-### 🔧 Example Usage
+### Example Usage
 ```csharp
 DLogger.Log("Hello World");
 DLogger.LogWarning("Potential issue!");
 DLogger.LogError("Critical failure!", "MySystem", "#FF0000");
 ```
 
-### 💬 Console Output (Unity-like)
+### Console Output (Unity-like)
 | Message | Type |
 |--------|------|
 | `[DLogger] Hello World` | Info |
@@ -65,7 +65,7 @@ DLogger.LogError("Critical failure!", "MySystem", "#FF0000");
 
 ---
 
-## 🎨 LogColors Reference
+## LogColors Reference
 
 Use the `LogColors` static class for consistent color tags in your logs.
 
@@ -102,7 +102,7 @@ DLogger.LogError("Missing reference!", "GameManager", LogColors.OrangeRed);
 
 ---
 
-## ⏰ DateUtils
+## DateUtils
 
 Utilities for parsing, converting, and formatting date/time in UTC.
 
@@ -130,7 +130,7 @@ Utilities for parsing, converting, and formatting date/time in UTC.
 
 ---
 
-## 🧩 EnumExtensions
+## EnumExtensions
 
 Attach readable strings to enums and retrieve them easily.
 
@@ -152,7 +152,7 @@ string label = Fruit.Apple.GetStringValue(); // "Sweet Apple"
 
 ---
 
-## 📐 RectTransformExtensions
+## RectTransformExtensions
 
 A collection of helper methods to manipulate UI layout easily.
 
@@ -180,7 +180,7 @@ rect.SetLeftTopPosition(new Vector2(20, -50));
 
 ---
 
-## 🧮 UIMath
+## UIMath
 
 A compact collection of math helpers—great for UI, color conversion, and positioning.
 
@@ -200,7 +200,7 @@ var uv = UIMath.ConvertToTexCoords(new Rect(0,0,64,64), 256, 256);
 
 ---
 
-## 🎛️ UISetExtensions
+## UISetExtensions
 
 Set values on UI elements **without triggering `OnValueChanged`** events.
 
@@ -221,7 +221,7 @@ myDropdown.Set(2);
 
 ---
 
-## 🧮 MathExtensions
+## MathExtensions
 
 General-purpose math helpers for clamping, absolute values, range looping, and data conversion. :contentReference[oaicite:0]{index=0}
 
@@ -253,7 +253,7 @@ byte encoded = 0.25f.ToByte01();                     // 160
 ---
 
 
-## 🔄 TransformExtensions
+## TransformExtensions
 
 Helper methods for directly manipulating global, local, and anchored positions. :contentReference[oaicite:1]{index=1}
 
@@ -281,7 +281,7 @@ var canvas = child.GetTopmostParentComponent<Canvas>();
 
 ---
 
-## 🧰 OtherExtensions
+## OtherExtensions
 
 Miscellaneous extra helpers for vectors, colors, and object manipulation (from `OtherExtentions.cs`).  
 *(Summary below based on your script content.)*
@@ -409,9 +409,9 @@ string clean = "đoạn này xấu quá".FilterBadwords();
 
 ---
 
-## 🧾 Credits & Contribution
+## Credits & Contribution
 
-Developed and maintained by **Denk Studio**.  
+Developed and maintained by **Benk Studio**.  
 Tested and verified on **Unity 6 (6000.0.28f1)**.
 
 🧠 **Contributions Welcome!**  
@@ -419,5 +419,5 @@ If you want to add more utilities, extensions, or optimizations — feel free to
 
 ---
 
-**© 2025 Denk Studio — MIT License**  
+**© 2025 Benk Studio — MIT License**  
 “Small, clean, and efficient utilities for modern Unity.”
